@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ob-havo">
+  <title>Markaziy Osiyo Ob-havo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">MARKAZIY OSIYO</div>
+      <h1 id="title">Ob-havo</h1>
+    </div>
+    <div class="top-actions">
+      <select id="language" aria-label="Til"></select>
+      <button id="refresh" class="icon-btn" aria-label="Yangilash">↻</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="status" class="status hidden"></section>
+    <section id="cards" class="cards"></section>
+    <section class="install-card">
+      <div>
+        <strong id="installTitle">iPhone'ga o‘rnatish</strong>
+        <p id="installText">Safari → Share → Add to Home Screen</p>
+      </div>
+      <button id="installBtn" class="primary hidden">O‘rnatish</button>
+    </section>
+  </main>
+
+  <footer>
+    <span>Open-Meteo</span>
+    <span id="updated"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
